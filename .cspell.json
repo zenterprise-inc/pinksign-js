@@ -17,6 +17,9 @@
     "globby",
     "libauth",
     "mkdir",
+    "pinksign",
+    "NPKI",
+    "oids",
     "prettierignore",
     "sandboxed",
     "transpiled",
@@ -29,6 +32,7 @@
     "package-lock.json",
     "yarn.lock",
     "tsconfig.json",
+    "src/lib/*.spec.ts",
     "node_modules/**"
   ]
 }

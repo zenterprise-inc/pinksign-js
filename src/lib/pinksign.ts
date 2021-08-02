@@ -1,8 +1,8 @@
-import * as forge from "node-forge";
-import {pki, util} from "node-forge";
+import * as forge from 'node-forge';
+import { pki, util } from 'node-forge';
 
 class PinkSign {
-  public pubkey: forge.pki.Certificate;
+  public pubkey: pki.Certificate;
 
   constructor(pubkeyData: ArrayBuffer) {
     const pubAsn1 = forge.asn1.fromDer(new util.ByteStringBuffer(pubkeyData));
