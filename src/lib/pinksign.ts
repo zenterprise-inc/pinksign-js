@@ -22,7 +22,6 @@ class PinkSign {
   get issuer(): string {
     return forge.util.decodeUtf8(this.pubkey.subject.getField('O').value);
   }
-
 }
 
 export default PinkSign;
