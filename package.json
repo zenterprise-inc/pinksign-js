@@ -42,7 +42,9 @@
     "node": ">=10"
   },
   "dependencies": {
-    "@bitauth/libauth": "^1.17.1"
+    "@bitauth/libauth": "^1.17.1",
+    "@types/node-forge": "^0.10.2",
+    "node-forge": "^0.10.0"
   },
   "devDependencies": {
     "@ava/typescript": "^1.1.1",
