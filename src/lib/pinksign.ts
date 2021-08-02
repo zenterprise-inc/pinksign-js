@@ -22,6 +22,13 @@ class PinkSign {
   get issuer(): string {
     return forge.util.decodeUtf8(this.pubkey.subject.getField('O').value);
   }
+
+  /**
+   * 유효기간 가져오기
+   */
+  get validDate(): { notBefore: Date; notAfter: Date } {
+    return this.pubkey.validity;
+  }
 }
 
 export default PinkSign;
