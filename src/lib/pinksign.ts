@@ -29,6 +29,13 @@ class PinkSign {
   get validDate(): { notBefore: Date; notAfter: Date } {
     return this.pubkey.validity;
   }
+
+  /**
+   * 시리얼번호 가져오기
+   */
+  get serialNum(): string {
+    return this.pubkey.serialNumber;
+  }
 }
 
 export default PinkSign;
