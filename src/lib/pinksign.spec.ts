@@ -151,10 +151,13 @@ const TestCert = {
 
 let pinksign: PinkSign;
 
-test.before((_) => {
+test.before((t) => {
   // This runs before all tests
   const pubkeyData = Buffer.from(TestCert['signCert'], 'base64');
   pinksign = new PinkSign(pubkeyData);
+
+  // noinspection SuspiciousTypeOfGuard
+  t.true(pinksign instanceof PinkSign);
 });
 
 test('issuer', (t) => {
@@ -177,4 +180,10 @@ test('serialNum', (t) => {
 
 test('certTypeOid', (t) => {
   t.is(pinksign.certTypeOid, TestCert['typeOid']);
+
+  const wrongPinksign = new PinkSign(
+    Buffer.from(TestCert['signCert'], 'base64')
+  );
+  wrongPinksign.pubkey.extensions = [];
+  t.is(wrongPinksign.certTypeOid, '');
 });
