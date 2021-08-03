@@ -1,5 +1,6 @@
 import * as forge from 'node-forge';
 import { asn1, pki, util } from 'node-forge';
+
 import { TExtension } from './types';
 
 class PinkSign {
