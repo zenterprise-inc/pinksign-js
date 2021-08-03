@@ -1,6 +1,6 @@
 {
   "name": "@emmental/pinksign",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Basic NPKI package",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
