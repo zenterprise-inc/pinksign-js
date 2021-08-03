@@ -174,3 +174,7 @@ test('validDate', (t) => {
 test('serialNum', (t) => {
   t.is(parseInt(pinksign.serialNum, 16), TestCert['serialNum']);
 });
+
+test('certTypeOid', (t) => {
+  t.is(pinksign.certTypeOid, TestCert['typeOid']);
+});
