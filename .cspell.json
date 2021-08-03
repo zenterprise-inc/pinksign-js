@@ -3,8 +3,6 @@
   "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/master/cspell.schema.json",
   "language": "en",
   "words": [
-    "bitjson",
-    "bitauth",
     "cimg",
     "circleci",
     "codecov",
@@ -15,7 +13,6 @@
     "execa",
     "exponentiate",
     "globby",
-    "libauth",
     "mkdir",
     "pinksign",
     "NPKI",
