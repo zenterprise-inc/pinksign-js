@@ -28,5 +28,5 @@ jobs:
         cache: 'npm'
     - run: yarn install --frozen-lockfile
     - run: yarn run build
-    - run: yarn add codecov nyc && yarn run cov:send
     - run: yarn test
+    - run: yarn run cov:send
